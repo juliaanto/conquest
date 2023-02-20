@@ -14,8 +14,7 @@ function browsersync() {
         extensions: ['html'],
       },
     },
-    port: 8080,
-    ui: { port: 8081 },
+    port: 3000,
     open: true,
   })
 }
@@ -62,7 +61,7 @@ function copyImages() {
 }
 
 function copyIcon() {
-  return src('./src/*.ico')
+  return src('./src/*.svg')
   .pipe(dest('./public/'))
 }
 
