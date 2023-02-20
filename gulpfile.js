@@ -41,7 +41,7 @@ function scripts() {
 }
 
 function pages() {
-  return src('./src/pages/*.html')
+  return src('./src/*.html')
   .pipe(
     includeFiles({
       includePaths: './src/components/**/',

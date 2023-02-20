@@ -1,0 +1,21 @@
+@mixin text($weight, $size) {
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+@mixin link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@mixin button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

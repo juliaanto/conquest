@@ -1,0 +1,15 @@
+.nav {
+  flex-grow: 1;
+}
+
+.nav__list {
+  @include list;
+  @include text(400, 14px);
+  justify-content: center;
+  gap: 65px;
+}
+
+.nav__link {
+  @include link;
+  color: $basic-grey;
+}
