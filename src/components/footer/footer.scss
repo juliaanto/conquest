@@ -1,0 +1,33 @@
+.footer {
+  background-color: $special-dark;
+  color: $white;
+  padding: 70px 110px;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__header {
+  @include text(700, 14px);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 27px;
+}
+
+.footer-list {
+  @include list;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.footer-list__item {
+  @include text(400, 12px);
+}
+
+.footer-list__link {
+  @include link;
+  color: $white;
+  opacity: 75%;
+}

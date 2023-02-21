@@ -5,6 +5,7 @@
 .nav__list {
   @include list;
   @include text(400, 14px);
+  flex-wrap: wrap;
   justify-content: center;
   gap: 65px;
 }
