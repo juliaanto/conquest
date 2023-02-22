@@ -19,3 +19,12 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+@mixin line($length) {
+  display: block;
+  position: absolute;
+  content: "";
+  width: $length;
+  height: 1px;
+  background-color: $special-grey;
+}
