@@ -29,7 +29,7 @@
   background-color: $special-grey;
 }
 
-@mixin header {
+@mixin heading {
   @include text(400, 32px);
   font-family: $font-main;
 }

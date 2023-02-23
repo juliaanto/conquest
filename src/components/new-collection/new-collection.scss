@@ -42,17 +42,6 @@
   margin: 0px 3px;
 }
 
-.button-basic {
-  @include link;
-  @include text(500, 12px);
-  background-color: $special-dark;
-  color: $white;
-  text-transform: uppercase;
-  padding: 26px 38px;
-  width: max-content;
-  letter-spacing: 0.05em;
-}
-
 .new-collection__product {
   position: relative;
   display: flex;

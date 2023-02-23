@@ -1,0 +1,108 @@
+.banner {
+  background: linear-gradient(to right, $basic-light 215px, $basic-beige 215px, $basic-beige 50%, $basic-light 50%) -215px;
+  padding: 50px 50px 0;
+  overflow: hidden;
+}
+
+.banner__wrapper {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 45px 20px 108px;
+  background: url("/img/quality.jpg") no-repeat 95px;
+  position: relative;
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border: 1px solid $basic-dark-beige;
+    border-radius: 50%;
+  }
+
+  &::before {
+    width: 365px;
+    height: 365px;
+    top: -202px;
+    right: -234px;
+  }
+
+  &::after {
+    width: 744px;
+    height: 744px;
+    top: -40px;
+    right: -605px;
+  }
+}
+
+.banner__text {
+  margin-left: 667px;
+  max-width: 380px;
+  z-index: 1;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 744px;
+    height: 516px;
+    background: linear-gradient(to right, transparent, $basic-light);
+    right: 0;
+    top: 0;
+    transform: translate(100%, -140px);
+  }
+}
+
+.banner__heading {
+  @include heading;
+  margin-top: 43px;
+  margin-bottom: 28px;
+}
+
+.banner__description {
+  color: $special-dark;
+  line-height: 150%;
+  margin-bottom: 58px;
+}
+
+.banner__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100px);
+  margin: 16px auto;
+  gap: 15px;
+}
+
+.pagination__button {
+  @include button;
+  width: 20px;
+  height: 20px;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-top: 0.5px solid $basic-dark;
+    border-right: 0.5px solid $basic-dark;
+  }
+}
+
+.pagination__button_prev {
+  transform: rotate(225deg) translateX(-3px);
+}
+
+.pagination__button_next {
+  transform: rotate(45deg) translateX(-4px);
+}
+
+.pagination__page-number {
+  @include text(400, 12px);
+  font-family: $font-special;
+  margin: 0;
+}
