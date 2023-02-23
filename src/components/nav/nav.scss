@@ -13,4 +13,12 @@
 .nav__link {
   @include link;
   color: $basic-grey;
+
+  &:hover {
+    color: $basic-dark-beige;
+  }
+
+  &:active {
+    color: $basic-neutral;
+  }
 }

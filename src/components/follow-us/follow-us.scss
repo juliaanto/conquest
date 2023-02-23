@@ -21,6 +21,14 @@
   @include link;
   @include text(700, 16px);
   color: $special-dark-grey;
+
+  &:hover {
+    color: $basic-dark-beige;
+  }
+
+  &:active {
+    color: $basic-neutral;
+  }
 }
 
 .social-media {
@@ -34,4 +42,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  :hover {
+    opacity: 70%;
+  }
+
+  :active {
+    opacity: 50%;
+  }
 }

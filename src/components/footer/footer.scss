@@ -7,6 +7,8 @@
 .footer__nav {
   display: flex;
   justify-content: space-around;
+  max-width: $max-width;
+  margin: 0 auto;
 }
 
 .footer__header {
@@ -30,4 +32,12 @@
   @include link;
   color: $white;
   opacity: 75%;
+
+  &:hover {
+    color: $basic-dark-beige;
+  }
+
+  &:active {
+    color: $basic-neutral;
+  }
 }

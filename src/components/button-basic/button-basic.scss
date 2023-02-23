@@ -10,9 +10,25 @@
 
 .button-basic_dark {
   background-color: $special-dark;
+
+  &:hover {
+    background-color: $basic-dark-beige;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
 }
 
 .button-basic_light {
   background-color: $basic-dark-beige;
+
+  &:hover {
+    background-color: $special-dark;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
 }
 

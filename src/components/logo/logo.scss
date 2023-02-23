@@ -2,6 +2,14 @@
   display: flex;
   align-items: center;
   gap: 5px;
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
 }
 
 .logo__text {

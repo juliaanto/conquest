@@ -19,11 +19,27 @@
   align-self: flex-end;
   padding-bottom: 6px;
   border-bottom: 1px solid $special-neutral;
+
+  &:hover {
+    border-bottom: 1px solid $basic-dark-beige;
+  }
+
+  &:active {
+    border-bottom: 1px solid $basic-neutral;
+  }
 }
 
 .popular-models__view-all {
   @include link;
   color: $special-dark;
+
+  &:hover {
+    color: $basic-dark-beige;
+  }
+
+  &:active {
+    color: $basic-neutral;
+  }
 }
 
 .product-cards {
@@ -51,6 +67,10 @@
     border: 1px solid transparent;
     border-radius: 50%;
     z-index: -1;
+  }
+
+  &:hover {
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   }
 }
 

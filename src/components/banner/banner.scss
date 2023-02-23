@@ -91,6 +91,11 @@
     border-top: 0.5px solid $basic-dark;
     border-right: 0.5px solid $basic-dark;
   }
+
+  &:hover::after {
+    border-top: 0.5px solid $basic-dark-beige;
+    border-right: 0.5px solid $basic-dark-beige;
+  }
 }
 
 .pagination__button_prev {
