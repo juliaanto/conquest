@@ -2,6 +2,7 @@
   display: flex;
   background-color: $basic-light;
   position: relative;
+  justify-content: center;
 }
 
 .main-header {
@@ -16,7 +17,7 @@
   display: flex;
   flex-direction: column;
   z-index: 2;
-  padding: 192px 20px 20px 181px;
+  padding: 192px 20px 20px 65px;
 }
 
 .title {
@@ -96,7 +97,8 @@
 .new-collection__background-wrapper {
   position: absolute;
   z-index: 1;
-  transform: translateX(470px);
+  left: 50%;
+  transform: translateX(-215px);
   height: 768px;
   width: 496px;
   overflow: hidden;
