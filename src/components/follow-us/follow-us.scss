@@ -1,0 +1,37 @@
+.follow-us {
+  max-width: 1171px;
+  margin: 0 auto;
+  padding: 194px 50px 151px;
+  background: url("/img/follow-us-photo-1.jpg") no-repeat 592px 80px, url("/img/follow-us-photo-2.jpg") no-repeat 592px 318px, url("/img/follow-us-photo-3.jpg") no-repeat 844px 80px;
+}
+
+.follow-us__heading {
+  @include heading;
+}
+
+.follow-us__text {
+  @include text(400, 16px);
+  line-height: 27px;
+  max-width: 450px;
+  margin-top: 23px;
+  margin-bottom: 110px;
+}
+
+.follow-us__link {
+  @include link;
+  @include text(700, 16px);
+  color: $special-dark-grey;
+}
+
+.social-media {
+  display: flex;
+  gap: 12px;
+}
+
+.social-media__link {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
