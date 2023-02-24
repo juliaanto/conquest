@@ -30,6 +30,10 @@
 }
 
 @mixin heading {
-  @include text(400, 32px);
+  @include text(400, 20px);
   font-family: $font-main;
+
+  @media (min-width: $tablet-width) {
+    @include text(400, 32px);
+  }
 }

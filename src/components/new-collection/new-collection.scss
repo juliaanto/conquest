@@ -93,11 +93,9 @@
 
 .new-collection__button {
   align-self: center;
-  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;
-    margin-bottom: 0;
   }
 }
 
