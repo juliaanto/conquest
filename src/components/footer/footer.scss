@@ -1,14 +1,29 @@
 .footer {
   background-color: $special-dark;
   color: $white;
-  padding: 60px 110px 70px;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 110px 70px;
+  }
 }
 
 .footer__nav {
   display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
   justify-content: space-around;
   max-width: $max-content-width;
   margin: 0 auto;
+}
+
+.footer__nav-item {
+  width: 30%;
+  flex-grow: 1;
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+  }
 }
 
 .footer__header {
