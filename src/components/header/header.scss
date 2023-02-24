@@ -5,13 +5,19 @@
 }
 
 .header__wrapper {
-  max-width: $max-width;
+  max-width: $max-content-width;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 1;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+  }
 }
 
 .link {
