@@ -28,17 +28,6 @@ function styles() {
   .pipe(browserSync.stream())
 }
 
-function scripts() {
-  return src('./src/js/script.js')
-  .pipe(
-    includeFiles({
-      includePaths: './src/components/**/',
-    })
-  )
-  .pipe(dest('./public/js/'))
-  .pipe(browserSync.stream())
-}
-
 function pages() {
   return src('./src/*.html')
   .pipe(
@@ -76,7 +65,6 @@ async function clean() {
 }
 
 function watch_dev() {
-  watch(['./src/js/script.js', './src/components/**/*.js'], scripts)
   watch(['./src/styles/style.scss', './src/components/**/*.scss'], styles).on(
     'change',
     browserSync.reload
@@ -89,7 +77,6 @@ function watch_dev() {
 
 exports.browsersync = browsersync
 exports.clean = clean
-exports.scripts = scripts
 exports.styles = styles
 exports.pages = pages
 exports.copyResources = copyResources
@@ -97,7 +84,6 @@ exports.copyResources = copyResources
 exports.default = parallel(
   clean,
   styles,
-  scripts,
   copyResources,
   pages,
   browsersync,
@@ -107,7 +93,6 @@ exports.default = parallel(
 exports.build = series(
   clean,
   styles,
-  scripts,
   copyResources,
   pages
 )
