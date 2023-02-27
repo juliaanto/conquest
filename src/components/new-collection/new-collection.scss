@@ -99,22 +99,6 @@
   }
 }
 
-.new-collection__button_desktop {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.new-collection__button_mobile {
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .new-collection__product {
   position: relative;
   display: flex;

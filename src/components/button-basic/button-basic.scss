@@ -6,6 +6,7 @@
   padding: 26px 38px;
   width: max-content;
   letter-spacing: 0.05em;
+  display: block;
 }
 
 .button-basic_dark {
@@ -29,6 +30,22 @@
 
   &:active {
     opacity: 50%;
+  }
+}
+
+.button-basic_desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.button-basic_mobile {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
