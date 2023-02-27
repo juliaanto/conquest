@@ -109,13 +109,11 @@
   @include heading;
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
     margin-bottom: 20px;
     margin-top: 0;
   }
 
   @media (min-width: $desktop-width-max) {
-    font-size: 32px;
     margin-top: 43px;
     margin-bottom: 13px;
   }
