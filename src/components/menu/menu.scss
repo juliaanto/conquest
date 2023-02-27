@@ -25,14 +25,19 @@
   }
 }
 
-.menu-item__count {
-  @include text(400, 8px);
-  line-height: 13px;
-  border-radius: 50%;
-  position: absolute;
-  top: -5px;
-  right: 0;
-  background-color: $special-light;
-  min-width: 13px;
-  min-height: 13px;
+.menu-item_count {
+  &::after {
+    display: block;
+    content: "1";
+    @include text(400, 8px);
+    line-height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background-color: $special-light;
+    min-width: 13px;
+    min-height: 13px;
+    margin: 0;
+  }
 }
