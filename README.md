@@ -1,13 +1,25 @@
-### Запуск проекта
+# Conquest
+Swiss watch shop
 
-1. Установить все зависимости проекта
+
+## Technologies Used
+- HTML
+- SCSS
+- Gulp
+
+
+## Сomposition
+- Home page layout
+- Adaptive layout
+
+
+## How to run
+To clone and run this application:
+
 ```
+git clone https://github.com/juliaanto/conquest.git
+cd conquest
 npm install
-```
-
-2. Запустить проект
-```
 gulp
 ```
-
-После запуска приложение будет доступно для просмотра в браузере по адресу: [http://localhost:3000](http://localhost:3000).
+The application will be available at [localhost:3000](http://localhost:3000).
